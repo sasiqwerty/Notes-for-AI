@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./../sakura.css" />
+		<title>Important Terms</title>
+	</head>
+	<body>
+		<h1>FailOverMode, FailBack and FailOver</h1>
+        <div>
+            <img src="./diff.svg" alt="Explainer">
+        </div>
+		<p>
+			CyberArk is a leading security solution that focuses on privileged access
+			management. In the context of CyberArk and many other IT systems, the
+			terms &quot;FailOverMode&quot;, &quot;FailBack&quot;, and
+			&quot;FailOver&quot; relate to high availability and disaster recovery
+			mechanisms. Here's a brief overview of these terms:
+		</p>
+		<ol>
+			<li>
+				<p><strong>FailOver</strong>:</p>
+				<ul>
+					<li>
+						<strong>Definition</strong>: Failover is the process of switching to
+						a redundant or standby system, server, hardware component, or
+						network upon the failure or abnormal termination of the previously
+						active system.
+					</li>
+					<li>
+						<strong>In CyberArk</strong>: If the primary CyberArk server (or any
+						other component) becomes unavailable, the system will automatically
+						switch to a secondary or backup server to ensure continuous service
+						availability. This process is transparent to the end-users, ensuring
+						that there's no disruption in service.
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p><strong>FailOverMode</strong>:</p>
+				<ul>
+					<li>
+						<strong>Definition</strong>: This typically refers to the mode or
+						state the system is in when it has switched to the backup or
+						secondary system due to a failure in the primary system.
+					</li>
+					<li>
+						<strong>In CyberArk</strong>: When the primary server is down, and
+						the system has switched to the backup server, it's said to be in
+						&quot;FailOverMode&quot;. In this mode, certain functionalities
+						might be limited or operate differently compared to when the primary
+						server is active.
+					</li>
+				</ul>
+			</li>
+			<li>
+				<p><strong>FailBack</strong>:</p>
+				<ul>
+					<li>
+						<strong>Definition</strong>: Failback is the process of restoring a
+						system, component, or service back to its primary state or location
+						after it has been shifted to a backup or secondary location during a
+						failover.
+					</li>
+					<li>
+						<strong>In CyberArk</strong>: Once the issues with the primary
+						server are resolved and it's back online, the system can be switched
+						back from the secondary server to the primary server. This process
+						of returning to the primary server is known as &quot;FailBack&quot;.
+						It ensures that the primary system is once again the active system,
+						and the secondary system returns to its standby state.
+					</li>
+				</ul>
+			</li>
+		</ol>
+		<p>
+			In essence, these mechanisms ensure that CyberArk services remain
+			available even in the face of failures, providing resilience and high
+			availability to its users.
+		</p>
+	</body>
+</html>
