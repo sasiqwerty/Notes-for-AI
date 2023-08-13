@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="sakura.css">
+		<link rel="stylesheet" href="sakura.css" />
 		<title>DR-Drill</title>
 	</head>
 	<body>
@@ -13,6 +13,11 @@
 			<button type="button" onclick="history.forward();">&#8594;</button>
 		</div>
 		<h2>Disaster Recovery</h2>
+		<p><em>Listen to the article below</em></p>
+		<audio controls>
+			<source src="dr-notes.mp3" type="audio/mpeg" />
+			Your browser does not support the audio element.
+		</audio>
 		<p>
 			In this section we will test the Disaster Recovery (DR) procedures for
 			automatic failover and manual failback. The exercise will include the
@@ -202,8 +207,8 @@
 			Before we failback to the Primary Vault we must first make sure we
 			replicate all the latest data from the DR Vault (which served as the
 			active Vault for the duration of resolving the incident). In this section
-			we will use the Disaster Recovery module on vault01a to replicate data back
-			from the DR Vault to the Primary Vault.
+			we will use the Disaster Recovery module on vault01a to replicate data
+			back from the DR Vault to the Primary Vault.
 		</p>
 		<p>
 			Note: The implementation team has already installed the Disaster Recovery
@@ -365,8 +370,6 @@
 			the DR_Failback users (using the PrivateArk Client) until the time you
 			want to work again on the disaster recovery exercise
 		</p>
-		<footer>
-			Notes - Created by Sasi Sarath 
-		</footer>
+		<footer>Notes - Created by Sasi Sarath</footer>
 	</body>
 </html>
